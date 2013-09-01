@@ -1,7 +1,7 @@
 Requirements:
     Generic:
-        yacoin
-        yac_scrypt
+        copperbars
+        cpr_scrypt
         Python
         Twisted
         python-argparse (for Python <=2.6)
@@ -17,11 +17,11 @@ Requirements:
             Unzip the files into C:\Python27\Lib\site-packages
 
 Additional info about scrypt module:
-        In order to run P2Pool with the YACoin network, you would need to build and install the
-        ltc_scrypt module that includes the scrypt proof of work code that YACoin uses for block hashes.
+        In order to run P2Pool with the copperbars network, you would need to build and install the
+        ltc_scrypt module that includes the scrypt proof of work code that copperbars uses for block hashes.
 
         Linux:
-            cd yacoin_scrypt
+            cd cproin_scrypt
             sudo python setup.py install
 
         Windows:
@@ -35,16 +35,13 @@ Additional info about scrypt module:
                 http://stackoverflow.com/questions/6034390/compiling-with-cython-and-mingw-produces-gcc-error-unrecognized-command-line-o
 
 Running P2Pool:
-    To use P2Pool, you must be running your own local yacoind. For standard
+    To use P2Pool, you must be running your own local copperbarsd. For standard
     configurations, using P2Pool should be as simple as:
 
         python run_p2pool.py
 
-    Then run your miner program, connecting to 127.0.0.1 on port 8336 with any
+    Then run your miner program, connecting to 127.0.0.1 on port 9777 with any
     username and password.
-
-    If you are behind a NAT, you should enable TCP port forwarding on your
-    router. Forward port 9777 to the host running P2Pool.
 
     Run "python run_p2pool.py --help" for additional options.
 
