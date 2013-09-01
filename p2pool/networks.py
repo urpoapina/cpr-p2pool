@@ -10,10 +10,10 @@ from p2pool.util import math
 nets = dict(
     copperbars=math.Object(
         PARENT=networks.nets['copperbars'],
-        SHARE_PERIOD=1, # seconds
-        CHAIN_LENGTH=2*60*60//1, # shares
-        REAL_CHAIN_LENGTH=2*60*60//1, # shares
-        TARGET_LOOKBEHIND=200, # shares
+        SHARE_PERIOD=5, # seconds
+        CHAIN_LENGTH=2*60*60//5, # shares
+        REAL_CHAIN_LENGTH=2*60*60//5, # shares
+        TARGET_LOOKBEHIND=150, # shares
         SPREAD=10, # blocks
         IDENTIFIER='d138e5b9e7923515'.decode('hex'),
         PREFIX='e206c3a24ee749b5'.decode('hex'),
