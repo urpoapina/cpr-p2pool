@@ -29,7 +29,7 @@ nets = dict(
         CONF_FILE_FUNC=lambda: os.path.join(os.path.join(os.environ['APPDATA'], 'copperbars') if platform.system() == 'Windows' else os.path.expanduser('~/Library/Application Support/copperbars/') if platform.system() == 'Darwin' else os.path.expanduser('~/.copperbars'), 'copperbars.conf'),
         BLOCK_EXPLORER_URL_PREFIX='http://x/block/',
         ADDRESS_EXPLORER_URL_PREFIX='http://x/address/',
-        SANE_TARGET_RANGE=(2**256//2**20//1000 - 1, 2**256//2**19 - 1),
+        SANE_TARGET_RANGE=(2**256//2**20//1000 - 1, 2**256//2**22 - 1),
     ),
 
     copperbars_testnet=math.Object(
